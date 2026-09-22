@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Girlfriend</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 30px 15px;
+            font-family: Georgia, serif;
+            background: #ffdce9;
+            color: #6b3045;
+        }
+        .letter {
+            max-width: 650px;
+            margin: auto;
+            background: #fff9fb;
+            padding: 35px;
+            border-radius: 25px;
+            box-shadow: 0 8px 25px rgba(180, 80, 120, 0.2);
+            border: 2px solid #f4b6cb;
+        }
+        h1 {
+            text-align: center;
+            color: #d94f7c;
+            margin-bottom: 5px;
+        }
+        .intro {
+            text-align: center;
+            color: #8c5368;
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+        .question {
+            margin-bottom: 28px;
+            padding: 20px;
+            background: #fff0f5;
+            border-radius: 18px;
+            border: 1px solid #f3c1d2;
+        }
+        label,
+        .question-title {
+            display: block;
+            font-weight: bold;
+            color: #c83f6d;
+            margin-bottom: 12px;
+        }
+        input[type="text"],
+        input[list],
+        textarea {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 12px;
+            border: 1px solid #e8a9bf;
+            border-radius: 12px;
+            background: white;
+            font-family: Arial, sans-serif;
+            font-size: 15px;
+            outline: none;
+        }
+        input[type="text"]:focus,
+        input[list]:focus,
+        textarea:focus {
+            border-color: #d94f7c;
+        }
+        textarea {
+            height: 250px;
+            resize: vertical;
+        }
+        .radio-option {
+            margin: 10px 0;
+            font-family: Arial, sans-serif;
+        }
+        .radio-option input {
+            accent-color: #d94f7c;
+            margin-right: 7px;
+        }
+        button {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 15px;
+            background: #d94f7c;
+            color: white;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #c83f6d;
+        }
+        .ending {
+            text-align: center;
+            margin-top: 25px;
+            color: #a0526e;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="letter">
+        <h1>For My Girlfriend</h1>
+        <p class="intro">
+            Please answer this little survey honestly.
+            <br>
+            Don't worry, there are no wrong answers.
+        </p>
+        <form action="https://formspree.io/f/xwlpoyld" method="POST">
+            <div class="question">
+                <label for="name">Your Name</label>
+                <input
+                    id="name"
+                    name="name"
+                    type="text"
+                    placeholder="Full Name"
+                    required
+                >
+            </div>
+            <div class="question">
+                <div class="question-title">
+                    How much do you love your girlfriend?
+                </div>
+                <div class="radio-option">
+                    <input
+                        name="amount"
+                        type="radio"
+                        value="Pinagtitiisan nalang kita"
+                        required
+                    >
+                    Pinagtitiisan nalang kita
+                </div>
+                <div class="radio-option">
+                    <input
+                        name="amount"
+                        type="radio"
+                        value="100%"
+                    >
+                    100%
+                </div>
+                <div class="radio-option">
+                    <input
+                        name="amount"
+                        type="radio"
+                        value="More than words can explain"
+                    >
+                    More than words can explain
+                </div>
+                <div class="radio-option">
+                    <input
+                        name="amount"
+                        type="radio"
+                        value="Hindi na"
+                    >
+                    Hindi na
+                </div>
+            </div>
+            <div class="question">
+                <label for="think">
+                    What do you think about your girlfriend?
+                </label>
+                <input
+                    id="think"
+                    name="think"
+                    type="text"
+                    placeholder="Type here..."
+                    required
+                >
+            </div>
+            <div class="question">
+                <div class="question-title">
+                    How often do you want lambing?
+                </div>
+                <div class="radio-option">
+                    <input
+                        name="lambing"
+                        type="radio"
+                        value="Always"
+                        required
+                    >
+                    Always
+                </div>
+                <div class="radio-option">
+                    <input
+                        name="lambing"
+                        type="radio"
+                        value="Every 5 minutes"
+                    >
+                    Every 5 minutes
+                </div>
+                <div class="radio-option">
+                    <input
+                        name="lambing"
+                        type="radio"
+                        value="I will never say no to lambing"
+                    >
+                    I will never say no to lambing
+                </div>
+                <div class="radio-option">
+                    <input
+                        name="lambing"
+                        type="radio"
+                        value="Ayaw ko"
+                    >
+                    Ayaw ko
+                </div>
+            </div>
+            <div class="question">
+                <label for="rate">
+                    Rate your girlfriend's performance as your girlfriend
+                </label>
+                <input
+                    id="rate"
+                    name="rate"
+                    list="ratings"
+                    placeholder="Choose a rating..."
+                    required
+                >
+                <datalist id="ratings">
+                    <option value="1 - Need improvement">
+                    <option value="2 - Try harder">
+                    <option value="3 - Okay">
+                    <option value="4 - Pretty good">
+                    <option value="5 - Don't need to explain">
+                </datalist>
+            </div>
+            <div class="question">
+                <label for="message">
+                    Message for your girlfriend
+                </label>
+                <textarea
+                    id="message"
+                    name="message"
+                    placeholder="Write your message here...."
+                    required
+                ></textarea>
+            </div>
+            <button type="submit">
+                Send My Answers
+            </button>
+        </form>
+        <p class="ending">
+            Thank you for answering.
+        </p>
+    </div>
+</body>
+</html>
